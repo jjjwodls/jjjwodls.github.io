@@ -12,7 +12,8 @@ $(function(){
   });
 });
 </script>
-
+{% assign category = page.url | remove:'/' | capitalize %}
+{% if category != ''%}
 <div class="row">
     <div class="col-lg-12 text-center">
         <div class="navy-line"></div>
@@ -68,3 +69,4 @@ $(function(){
         {% include pagination.html %}
     </div>
 </div>
+{% endif %}
