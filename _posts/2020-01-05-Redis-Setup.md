@@ -6,9 +6,8 @@ desc: "윈도우 환경에서의 Redis 설치"
 keywords: "Redis,Spring"
 categories: [Etc]
 tags: [Redis,Spring,Java]
-icon: icon-html
+icon: server
 ---
-
 안녕하세요 Dev JaeIn 입니다.
 
 최근 진행했던 Redis 윈도우 설치 후 테스트를 진행했습니다.
