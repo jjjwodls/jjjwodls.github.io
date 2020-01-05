@@ -14,7 +14,7 @@ icon: server
 
 우선 설치 방법입니다.
 
-1.https://github.com/microsoftarchive/redis/releases/tag/win-3.2.100 에서 윈도우 전용 Redis 를 다운로드 후 압축 해제 합니다.
+1.(https://github.com/microsoftarchive/redis/releases/tag/win-3.2.100) 에서 윈도우 전용 Redis 를 다운로드 후 압축 해제 합니다.
 
 2.압축을 해제하면 다음과 같은 파일들이 보입니다.
 
