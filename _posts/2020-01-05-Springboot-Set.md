@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "스프링부트(Spring Booot) 설치 및 구동입니다."
-date:   2020-01-02
+date:   2020-01-05
 desc: "블로그 개설 후 소개하기 위해 작성합니다."
 keywords: "Info,JaeIn"
 categories: [Spring]
