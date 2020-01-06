@@ -5,7 +5,7 @@ date:   2020-01-02
 desc: "윈도우 환경에서의 Redis 설치"
 keywords: "Redis,Spring"
 categories: [Etc]
-tags: [Redis,Spring,Java]
+tags: [Redis,Spring,DB,Server]
 icon: server
 ---
 안녕하세요 Dev JaeIn 입니다.
@@ -38,7 +38,8 @@ icon: server
 
 이상 Redis 윈도우에 설치 및 테스트 진행 결과였습니다.
 
-- 정리 
+### 정리
+*** 
 Redis는 주로 캐시서버로 이용됩니다. Inmemory 방식이므로 서버를 거쳐 처리하게되면 (EX: DB를 통한 데이터 접근 등) 오래 걸리는 데이터들을 
 
 Redis 저장소에 미리 담아 두고 사용자의 요청이 왔을 때 원하는 데이터가 먼저 캐시버서에 있는지 확인 후 

@@ -5,7 +5,7 @@ date:   2020-01-06
 desc: "Spring과 Redis 연동"
 keywords: "Redis,Spring"
 categories: [Spring]
-tags: [Redis,Spring,Java]
+tags: [Redis,Spring,Java,DB,Server]
 icon: server
 ---
 안녕하세요 Dev JaeIn 입니다.
@@ -14,17 +14,18 @@ icon: server
 
 Spring Boot 설치와 Redis 설치는 이전 포스팅을 참조하시면 되겠습니다.
 
-[스프링부트 설치 방법](https://jjjwodls.github.io/spring/2020/01/05/Springboot-Set.html)
-[Redis 설치 방법_Window 기준](https://jjjwodls.github.io/etc/2020/01/02/Redis-Setup.html)
+- [스프링부트 설치 방법](https://jjjwodls.github.io/spring/2020/01/05/Springboot-Set.html)
+  
+- [Redis 설치 방법_Window 기준](https://jjjwodls.github.io/etc/2020/01/02/Redis-Setup.html)
 
 이번 포스팅은 간단한 예제로 진행합니다. 
 
 Redis 는 기존 포스팅에서도 작성했지만 저장소 입니다. 하지만, Orcacle이나 Mysql과 다른 NoSQL 형태의 DB라고 생각하시면 됩니다. 
-그래서 관계형 데이터 베이스 구조가 아닌 ###key,value 쌍으로 저장됩니다.
+그래서 관계형 데이터 베이스 구조가 아닌 **key,value** 쌍으로 저장됩니다.
 
 Redis 와 SpringBoot 연동 설명 시작하겠습니다.
 
-**
+***
 
 1.먼저 Redis 서버를 구동합니다.(redis-server.exe)
 
@@ -55,8 +56,8 @@ Redis 와 SpringBoot 연동 설명 시작하겠습니다.
 
 이상 Redis 윈도우에 설치 및 테스트 진행 결과였습니다.
 
-- 추가
-  
+### 추가
+*** 
 이번 포스팅에서는 String 으로 key,value 쌍으로만 테스트 진행했지만,
 
 List, Set 등등 다른 형태로 데이터로도 저장이 가능합니다. 
