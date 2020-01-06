@@ -20,7 +20,7 @@ icon: server
 
 * Dummy 데이터 및 테이블 구조
   
-  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-08-35.png)
+  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-08-35.png){: .img-center} 
 
   테이블 구조의 Primary key 가 1부터 순차적으로 증가하여 Random 한 숫자를 생성하면 접근 가능하도록 구성되어 있습니다.
 
@@ -40,7 +40,7 @@ icon: server
 
 * 제가 구성한 로직은 다음과 같이 구성했습니다.
   
-  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-13-40.png)
+  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-13-40.png){: .img-center} 
   
 서비스 로직에 DB에서 가져오는 로직과 Redis에서 가져오는 로직을 만들었습니다.
 
@@ -48,31 +48,31 @@ icon: server
 
 * User class
   
-  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-41-44.png)
+  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-41-44.png){: .img-center} 
 
 * Controller
   
-  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-43-29.png)
+  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-43-29.png){: .img-center} 
 
 * Service
  
-  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-43-47.png)
+  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-43-47.png){: .img-center} 
 
 * Dao
   
-  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-38-58.png)
+  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-38-58.png){: .img-center} 
 
 * Redis Data Set
   
   Redis에는 1만개 데이터를 미리 넣습니다. (Redis 서버가 꼭 실행중이여야 합니다.)
 
-  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-40-49.png)
+  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-40-49.png){: .img-center} 
 
 * 실제 Request 결과 페이지
   
-  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-45-45.png)
+  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-45-45.png){: .img-center} 
 
-  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-46-00.png)
+  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-46-00.png){: .img-center} 
 
 ***
 
@@ -80,7 +80,7 @@ jmeter 를 사용하여 Request 를 날려 분석해보겠습니다.
 
 요청은 유저수 4천명 기준으로 잡고 진행했습니다. 동일한 유저수로 Redis,DB 요청을 진행한 결과를 보여드리겠습니다.
 
-![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-31-56.png)
+![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-31-56.png){: .img-center} 
 
 ***
 
@@ -90,23 +90,23 @@ jmeter 를 사용하여 Request 를 날려 분석해보겠습니다.
 
 중점적으로 살펴본 것은 처리량 및 응답받은 데이터 입니다.
 
-![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-41-46.png)
+![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-41-46.png){: .img-center} 
 
 * Transactions Per Second
 
-![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-45-40.png)
+![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-45-40.png){: .img-center} 
 
 대략 50 정도에서 움직이는 것을 확인 할 수 있습니다. DB 에서 데이터를 가져오는 시간이 있기 때문에 요정도 수치가 나왔다고 생각합니다.
 
 * Response Times Over Time
 
-![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-48-16.png)
+![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-48-16.png){: .img-center} 
 
 처리 가능한 시간 대비 사용자수가 급격히 증가하여 응답시간은 점점 늘어나는 것을 확인 할 수 있습니다.
 
 * Active Threads Over Time
 
-![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-49-14.png)
+![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-49-14.png){: .img-center} 
 
 쓰레드 수도 순차적으로 줄어드는것을 확인 할 수 있습니다.
 
@@ -118,11 +118,11 @@ jmeter 를 사용하여 Request 를 날려 분석해보겠습니다.
 
 이번에도 중점적으로 살펴본 것은 처리량 및 응답받은 데이터 입니다.
 
-![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-50-53.png)
+![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-50-53.png){: .img-center} 
 
 * Transactions Per Second
 
-![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-51-44.png)
+![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-51-44.png){: .img-center} 
 
 최대 800 이상까지 올라가는 것을 확인 할 수 있습니다. 아무래도 DB에 접근하지 않고 바로 가져오니 빠르게 처리하는 것을
 
@@ -130,13 +130,13 @@ jmeter 를 사용하여 Request 를 날려 분석해보겠습니다.
 
 * Response Times Over Time
 
-![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-51-54.png)
+![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-51-54.png){: .img-center} 
 
 응답시간도 전체적으로 빠른편 입니다. TPS가 높다 보니 응답 데이터가 최대한 들어오는 대로 처리가 가능하다 보여집니다.
 
 * Active Threads Over Time
 
-![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-52-12.png)
+![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-13-52-12.png){: .img-center} 
 
 쓰레드 숫자도 누적되기 전에 처리되는 것을 확인 가능합니다.
 
@@ -167,7 +167,7 @@ jmeter 를 사용하여 Request 를 날려 분석해보겠습니다.
 3. Response Times Over Time
 
       DB : 가장 마지막에 들어온 사람은 최대 87초 동안 대기.
-      
+
       Redis : 가장 마지막에 들어온 사람은 2.3초 동안 대기
 
       응답 시간도 매우 차이나는 것을 확인 가능합니다.
