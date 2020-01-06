@@ -151,6 +151,7 @@ jmeter 를 사용하여 Request 를 날려 분석해보겠습니다.
 1. Throughput (MAX 기준)
 
       DB : 43.5/sec
+
       Redis : 568.8/sec
 
       Redis가 압도적으로 빠른 처리량을 보입니다.
@@ -158,6 +159,7 @@ jmeter 를 사용하여 Request 를 날려 분석해보겠습니다.
 2. Transactions Per Second(TPS)
    
       DB : 50 
+
       Redis : 800 
 
       TPS도 마찬가지로 Redis 가 빠른 처리량을 보입니다.
@@ -165,6 +167,7 @@ jmeter 를 사용하여 Request 를 날려 분석해보겠습니다.
 3. Response Times Over Time
 
       DB : 가장 마지막에 들어온 사람은 최대 87초 동안 대기.
+      
       Redis : 가장 마지막에 들어온 사람은 2.3초 동안 대기
 
       응답 시간도 매우 차이나는 것을 확인 가능합니다.
