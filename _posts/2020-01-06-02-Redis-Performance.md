@@ -44,7 +44,35 @@ icon: server
   
 서비스 로직에 DB에서 가져오는 로직과 Redis에서 가져오는 로직을 만들었습니다.
 
-서버가 구동 될 때 Redis에 1만개의 데이터를 미리 저장해놓고 진행했습니다.  
+## 구현한 소스 보여드린 후 진행하도록 하겠습니다.
+
+* User class
+  
+  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-41-44.png)
+
+* Controller
+  
+  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-43-29.png)
+
+* Service
+ 
+  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-43-47.png)
+
+* Dao
+  
+  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-38-58.png)
+
+* Redis Data Set
+  
+  Redis에는 1만개 데이터를 미리 넣습니다. (Redis 서버가 꼭 실행중이여야 합니다.)
+
+  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-40-49.png)
+
+* 실제 Request 결과 페이지
+  
+  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-45-45.png)
+
+  ![](/assets/img/blog/2020-01-06-Redis-Performance/2020-01-06-14-46-00.png)
 
 ***
 
