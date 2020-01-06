@@ -15,7 +15,7 @@ icon: icon-html
 
 우선 스프링 부트 다운로드를 진행합니다. 
 
-1.(https://spring.io/tools) 에 가셔서 환경에 맞는 툴을 다운로드 진행합니다.
+1.<https://spring.io/tools> 에 가셔서 환경에 맞는 툴을 다운로드 진행합니다.
 
 ![](/assets/img/blog/2020-01-05-Springboot-Set/2020-01-05-23-35-16.png){: .img-center}
 

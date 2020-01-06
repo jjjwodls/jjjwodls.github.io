@@ -10,17 +10,20 @@ icon: server
 ---
 안녕하세요 Dev JaeIn 입니다.
 
-최근 진행했던 Redis 윈도우 설치 후 테스트를 진행했습니다.
+최근 진행했던 Redis 윈도우 설치 후 테스트를 진행했었습니다.
 
-우선 설치 방법입니다.
+그래서 진행 과정 및 테스트에 대한 내용을 공유하고자 합니다.
 
-1.(https://github.com/microsoftarchive/redis/releases/tag/win-3.2.100) 에서 윈도우 전용 Redis 를 다운로드 후 압축 해제 합니다.
+우선 설치 방법부터 설명드리겠습니다.
+
+1.<https://github.com/microsoftarchive/redis/releases/tag/win-3.2.100> 에서 윈도우 전용 Redis 를 다운로드 후 압축 해제 합니다.
 
 2.압축을 해제하면 다음과 같은 파일들이 보입니다.
 
 ![](/assets/img/blog/2020-01-05-Redis-Setup/2020-01-05-22-14-41.png){: .img-center}
 
 3.Redis-server.exe 를 수행합니다. 
+
 4.서버가 수행되면 cmd 창이 나타나며 서버가 수행중인것이 나타납니다. 포트번호 6379 라고 나타납니다. redis.windows.conf 파일에 기본으로 설정된 서버 포트입니다.
 
  ![](/assets/img/blog/2020-01-05-Redis-Setup/2020-01-05-22-17-26.png){: .img-center}
