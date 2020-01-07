@@ -4,7 +4,7 @@ title:  "Kafka 와 SpringBoot 연동"
 date:   2020-01-07
 desc: "Kafka 와 SpringBoot 연동"
 keywords: "Kafka"
-categories: [Etc]
+categories: [Spring]]
 tags: [Kafka,Server,Spring]
 icon: server
 ---
