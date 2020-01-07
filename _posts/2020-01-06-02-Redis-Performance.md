@@ -6,7 +6,7 @@ desc: "Redis 성능테스트"
 keywords: "Redis,Spring"
 categories: [Spring]
 tags: [Redis,Spring,Java,DB,Server]
-icon: server
+icon: icon-apache
 ---
 안녕하세요 Dev JaeIn 입니다.
 
@@ -189,6 +189,8 @@ jmeter 를 사용하여 Request 를 날려 분석해보겠습니다.
 이번 테스트를 통해 Redis 서버의 빠른 퍼포먼스를 알 수 있었습니다.
 
 많은 대규모 서비스를 하는 기업들이 Redis를 왜 사용하는지 대규모 서비스에서 왜 빠른 응답이 가능 한지 알 수 있는 시간이였습니다.
+
+소스코드는 압축하여 [여기](https://github.com/jjjwodls/Study/tree/master/RedisCompareDB) 에 올려두었습니다.
 
 읽어주셔서 감사합니다. 
 

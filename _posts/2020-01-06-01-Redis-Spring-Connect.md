@@ -6,7 +6,7 @@ desc: "Spring과 Redis 연동"
 keywords: "Redis,Spring"
 categories: [Spring]
 tags: [Redis,Spring,Java,DB,Server]
-icon: server
+icon: icon-apache
 ---
 안녕하세요 Dev JaeIn 입니다.
 
