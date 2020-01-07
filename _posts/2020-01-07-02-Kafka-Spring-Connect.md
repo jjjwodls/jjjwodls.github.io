@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Kafka 와 SpringBoot 연동"
-date:   2020-01-07
+date:  2020-01-07
 desc: "Kafka 와 SpringBoot 연동"
 keywords: "Kafka"
-categories: [Spring]]
+categories: [Spring]
 tags: [Kafka,Server,Spring]
-icon: server
+icon: icon-apache
 ---
 안녕하세요 Dev JaeIn 입니다.
 
