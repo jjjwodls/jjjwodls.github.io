@@ -8,6 +8,12 @@ title : Sitemap
     <url>
         <loc>{{site.url}}{{ post.url}}</loc>
     </url>
+    {% if post.sitemap.changefreq == null %}
+        <changefreq>hourly</changefreq>
+    {% else %}
+        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+    {% endif %}
+
 {% endfor %}
 <!-- {% for page in site.pages %}
     <url>
