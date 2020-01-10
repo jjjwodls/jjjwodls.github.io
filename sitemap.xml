@@ -22,9 +22,9 @@ title : Sitemap
 
 
 {% endfor %}
-<!-- {% for page in site.pages %}
+{% for page in site.pages %}
     <url>
         <loc>{{site.url}}{{ page.url | prepend: site.baseurl }}</loc>
     </url>
-{% endfor %} -->
+{% endfor %}
 </urlset>
