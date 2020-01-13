@@ -51,11 +51,11 @@ String c = a+b;
 
 StringBuffer는 Thread-safe 입니다.
 
-![](/assets/img/blog/2020-01-13-String%20Builder%20Buffer/2020-01-13-22-36-25.png)
+![](/assets/img/blog/2020-01-13-String%20Builder%20Buffer/2020-01-13-22-36-25.png){: .img-center}
 
 StringBuffer는 Thread-safe 하지 않는다.
 
-![](/assets/img/blog/2020-01-13-String%20Builder%20Buffer/2020-01-13-22-38-08.png)
+![](/assets/img/blog/2020-01-13-String%20Builder%20Buffer/2020-01-13-22-38-08.png){: .img-center}
 
 이런 차이점이 존재합니다. 
 
@@ -88,5 +88,5 @@ StringBuilder 를 사용하자.
 
 부족한 부분 있으면 댓글 부탁드립니다!
 
-
+***
 
