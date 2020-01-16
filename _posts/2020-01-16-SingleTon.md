@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Java의 싱글톤(SingleTOon) 패턴"
+title:  "Java의 싱글톤(SingleTon) 패턴"
 date:   2020-01-16
 desc: "싱글톤 패턴의 소개 및 쓰임"
 keywords: "Java,SingleTon"
