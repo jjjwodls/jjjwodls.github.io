@@ -21,7 +21,7 @@ icon: icon-java
 
 ## 우선 String이 저장되는 과정입니다.
 
-```
+```java
 String a = "a";
 String b = "b";
 String c = a+b;

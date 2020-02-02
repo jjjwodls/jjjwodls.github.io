@@ -28,7 +28,7 @@ icon: icon-java
 
 그러면 일반적으로 알고있는 싱글톤 코드에 대해 작성해보겠습니다.
 
-```
+```java
 public class SingleTon{
 
     private static SingleTon instance;
@@ -49,7 +49,7 @@ public class SingleTon{
 
 이런식의 코드를 작성합니다. 하지만, 다중 스레드 환경에서라면 여러개의 인스턴스가 생성 될 수도 있습니다. 그래서 다음과 같이 메소드에 synchronized 를 붙여 잠금 장치를 생성해줍니다. 
 
-```
+```java
 public static synchronized SingleTon getInstance(){
         if(instance == null){
             instance = new SingleTon();
@@ -60,7 +60,7 @@ public static synchronized SingleTon getInstance(){
 
 이중 잠금 장치를 이용해서 만든 싱글톤 입니다.
 
-```
+```java
 public class SingleTon{
 
     //volatile 은 Java 변수를 Main Memory에 저장하겠다는 의미.
@@ -94,7 +94,7 @@ public class SingleTon{
 
 ### enum은 태생부터 싱글톤이라 객체 생성 및 동기화, 그리고 초기화 관련 문제를 고민하지 않아도 됩니다.
 
-```
+```java
 public enum SingleTonEnum{
     INSTANCE;
     public void doAnyThing(){
@@ -105,7 +105,7 @@ public enum SingleTonEnum{
 
 싱글톤 객체 인스턴스는 다음과 같이 참고합니다.
 
-```
+```java
 SingleTonEnum enumSingleTon = SingleTonEnum.INSTANCE;
 ```
 

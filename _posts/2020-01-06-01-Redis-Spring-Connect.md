@@ -32,11 +32,10 @@ Redis 와 SpringBoot 연동 설명 시작하겠습니다.
 2.SpringBoot Tool을 수행 후 프로젝트를 새로 생성합니다. 
 기존에 테스트 했던 프로젝트를 사용하시거나 또는 프로젝트에 적용시키고 싶으신 분들은 pom.xml에 Dependency를 추가하시면 됩니다.
 
-```
+```js
 <dependency>
    <groupId>org.springframework.boot</groupId>
-   <artifactId>spring-boot-starter-data-redis-reactive
-   </artifactId>
+   <artifactId>spring-boot-starter-data-redis-reactive</artifactId>
 </dependency>
 ```
 

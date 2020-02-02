@@ -21,7 +21,7 @@ icon: icon-database
 백만건의 데이터를 생성하며 기본키로는 id, 
 추가 칼럼에는 랜덤한 숫자를 넣어 생성하도록 했습니다.
 
-```
+```js
 CREATE TABLE dummy AS
 SELECT  level AS id,
         '저는 숫자 ' || ROUND(DBMS_RANDOM.VALUE(1, 1000000),0) || ' 가 좋아요' AS customer
@@ -34,7 +34,7 @@ FROM    dual
 ![](/assets/img/blog/2020-01-09-dummy-oracle/2020-01-10-14-15-16.png){: .img-center}
 
 
-```
+```js
 SELECT LEVEL AS ID FROM DUAL
 CONNECT BY LEVEL <=10;
 ```
@@ -43,7 +43,7 @@ CONNECT BY LEVEL <=10;
   
   2018년 12월 1일부터 시작하여 하루씩 증가하는 쿼리입니다.
 
-```
+```js
 SELECT TO_DATE('20181201','YYYYMMDD') + (ROWNUM-1) AS CAL
 FROM DUAL
 CONNECT BY LEVEL <=50;
@@ -53,7 +53,7 @@ CONNECT BY LEVEL <=50;
 
 * 다음과 같은 쿼리를 통해 1개월치 날짜만 가져오는것도 가능합니다.
 
-```
+```js
 SELECT TO_DATE('20181201','YYYYMMDD') + (ROWNUM -1) AS TEMP_CAL
 FROM DUAL
 CONNECT BY LEVEL <= (TO_DATE('20181231','YYYYMMDD') - TO_DATE('20181201','YYYYMMDD') + 1);
@@ -63,7 +63,7 @@ CONNECT BY LEVEL <= (TO_DATE('20181231','YYYYMMDD') - TO_DATE('20181201','YYYYMM
 
 * 마지막으로 1시간씩 증가하는 쿼리입니다. 
 
-```
+```js
 SELECT TO_TIMESTAMP('01'+(ROWNUM-1) || ':00','HH24:MI') AS TEMP FROM DUAL
 CONNECT BY LEVEL <=23;
 ```
