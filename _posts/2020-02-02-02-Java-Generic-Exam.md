@@ -2,7 +2,7 @@
 layout: post
 title:  "Object 배열의 Stack VS 제네릭(Generic) Stack"
 date:   2020-02-02
-desc: "블로그 개설 후 소개하기 위해 작성합니다."
+desc: "스택코드를 활용한 제네릭의 장점"
 keywords: "Java,Generic,제네릭,제네릭 과 Object 비교"
 categories: [Java]
 tags: [Java,자바,Generic,제네릭,컬렉션,Collection]
