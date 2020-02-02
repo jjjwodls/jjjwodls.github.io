@@ -65,8 +65,8 @@ objectAry[0] = 1; //String 타입의 배열에 int 형 타입을 대입하려함
 2. 제네릭을 사용한 예시 (EX-2)
 
 ```java
-//컴파일 진행 안됨. 이미 String 타입만 들어가야 한다고 명시되어 있어서
-list에 int 형을 넣게되면 컴파일이 진행되지 않음.
+/*컴파일 진행 안됨. 이미 String 타입만 들어가야 한다고 명시되어 있어서
+list에 int 형을 넣게되면 컴파일이 진행되지 않음.*/
 
 List<String> list = new ArrayList<>();
 list.add(1);
