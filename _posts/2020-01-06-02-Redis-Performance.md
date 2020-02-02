@@ -3,7 +3,7 @@ layout: post
 title:  "Spring 으로 Redis 성능 테스트"
 date:   2020-01-06
 desc: "Redis 성능테스트"
-keywords: "Redis,Spring"
+keywords: "Redis,Spring,스프링 레디스(Redis) 연동"
 categories: [Spring]
 tags: [Redis,Spring,Java,DB,Server]
 icon: icon-apache

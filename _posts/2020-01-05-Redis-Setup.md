@@ -3,7 +3,7 @@ layout: post
 title:  "Redis 설치 입니다.(Window)"
 date:   2020-01-02
 desc: "윈도우 환경에서의 Redis 설치"
-keywords: "Redis,Spring"
+keywords: "Redis,Spring,Redis 설치, 윈도우 Redis 설치"
 categories: [Etc]
 tags: [Redis,Spring,DB,Server]
 icon: server

@@ -3,7 +3,7 @@ layout: post
 title:  "Kafka 와 SpringBoot 연동"
 date:  2020-01-07
 desc: "Kafka 와 SpringBoot 연동"
-keywords: "Kafka"
+keywords: "Kafka,Spring Kafka,스프링 카프카 연동"
 categories: [Spring]
 tags: [Kafka,Server,Spring]
 icon: icon-apache

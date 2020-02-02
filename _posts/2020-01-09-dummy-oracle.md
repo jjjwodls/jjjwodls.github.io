@@ -3,7 +3,7 @@ layout: post
 title:  "Oracle Dummy 데이터 생성"
 date:   2020-01-09
 desc: "오라클에서 Dummy 데이터를 생성하는 방법입니다."
-keywords: "Info,JaeIn"
+keywords: "Info,JaeIn,오라클 더미데이터,오라클 더미Data,오라클 Dummydata"
 categories: [Database]
 tags: [Database,Oracle]
 icon: icon-database

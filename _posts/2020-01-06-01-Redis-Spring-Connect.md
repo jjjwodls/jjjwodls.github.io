@@ -3,7 +3,7 @@ layout: post
 title:  "Spring Boot와 Redis 연동"
 date:   2020-01-06
 desc: "Spring과 Redis 연동"
-keywords: "Redis,Spring"
+keywords: "Redis,Spring,스프링 레디스(Redis) 연동"
 categories: [Spring]
 tags: [Redis,Spring,Java,DB,Server]
 icon: icon-apache

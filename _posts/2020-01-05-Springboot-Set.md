@@ -3,7 +3,7 @@ layout: post
 title:  "스프링부트(Spring Booot) 설치 및 구동입니다."
 date:   2020-01-05
 desc: "블로그 개설 후 소개하기 위해 작성합니다."
-keywords: "Info,JaeIn"
+keywords: "SpringBoot,스프링 부트 설치 , 구동"
 categories: [Spring]
 tags: [Spring,Java,SpringBoot]
 icon: icon-html

@@ -3,7 +3,7 @@ layout: post
 title:  "Java의 싱글톤(SingleTon) 패턴"
 date:   2020-01-16
 desc: "싱글톤 패턴의 소개 및 쓰임"
-keywords: "Java,SingleTon"
+keywords: "Java,SingleTon,싱글톤,자바 싱글톤,Java SingleTon"
 categories: [Java]
 tags: [Java,SingleTon]
 icon: icon-java
