@@ -3,7 +3,7 @@ layout: post
 title:  "Java의 제네릭(Generic) 왜 사용해야 하는가??" 
 date:   2020-02-02
 desc: "제네릭(Generic) 이 무엇인지부터 일반 배열과 차이점, 사용 예시"
-keywords: "Info,JaeIn"
+keywords: "Java,Generic,제네릭,제네릭 사용이유"
 categories: [Java]]
 tags: [Java,자바,Generic,제네릭,컬렉션,Collection]
 icon: icon-java
