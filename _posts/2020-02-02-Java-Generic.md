@@ -4,9 +4,9 @@ title:  "Java의 제네릭(Generic) 왜 사용해야 하는가??"
 date:   2020-02-02
 desc: "제네릭(Generic) 이 무엇인지부터 일반 배열과 차이점, 사용 예시"
 keywords: "Info,JaeIn"
-categories: [Life]
-tags: [Info,About,DevJaeIn]
-icon: icon-html
+categories: [Java]]
+tags: [Java,자바,Generic,제네릭,컬렉션,Collection]
+icon: icon-java
 ---
 
 안녕하세요 Dev JaeIn 입니다.
@@ -51,7 +51,7 @@ icon: icon-html
 
 설명도 설명이지만 코드로 보여드리는게 이해가 훨씬 빠르겠죠 ? 예시를 들어보겠습니다.
 
-1. Object 배열을 사용한 예시 
+1. Object 배열을 사용한 예시 (EX-1)
 
 ```java
 //컴파일은 됩니다. 하지만, 런타임에서 java.lang.ArrayStoreException 이 발생합니다.
@@ -62,7 +62,7 @@ objectAry[0] = 1; //String 타입의 배열에 int 형 타입을 대입하려함
 
 * 이처럼 배열은 컴파일할때 확실히 어떤 타입인지 인지하고 있기 때문에 컴파일은 진행되지만 런타임시에 타입과 맞지 않는 데이터가 들어오면 런타임 Exception 이 발생합니다.
 
-2. 제네릭을 사용한 예시
+2. 제네릭을 사용한 예시 (EX-2)
 
 ```java
 //컴파일 진행 안됨. 이미 String 타입만 들어가야 한다고 명시되어 있어서
@@ -71,3 +71,52 @@ list에 int 형을 넣게되면 컴파일이 진행되지 않음.
 List<String> list = new ArrayList<>();
 list.add(1);
 ```
+
+- 이러한 사례로 Object 배열보다는 List 사용을 권장하는 이유가 되기도 합니다.
+
+- 실제로 작성한 코드가 컴파일 단계에서 예외가 발생하면 바로 잡아낼 수 있지만 실시간으로 서비스 될 때 발생한다면 ? 정말 생각만해도 답답하죠..
+
+### 따라서 제네릭을 사용한다면 컴파일 시점에서 오류를 발견하여 매우 좋다.
+
+***
+
+## 그러면 제네릭으로 배열을 생성해서 사용하면 되지 않을까 ?? 
+
+* 결론부터 말씀드리면 제네릭 배열은 타입이 안전하지 않기 때문에 컴파일이 안됩니다. 제가 공부중인 책을 참고하여 예시를 들어 설명하겠습니다.
+
+*** 
+
+```java
+List<String>[] stringLists = new ArrayList<String>[1]; // 1)
+List<Integer> intList = new ArrayList<>(); // 2)
+intList.add(1); 
+Object[] objectAry = stringLists; //3)
+objectAry[0] = intList; //4)
+String s = stringLists[0].get(0); //5) 책에는 다음과 같이 나와있는데 제 개인적인 생각은 objectAry[0].get(0) 가 되어야 하지 않나 생각합니다. 
+```
+
+- 위 예제를 컴파일 자체가 안됩니다. 1) 단계에서 컴파일 에러가 발생할것입니다. 그래서 컴파일이 된다는 가정하에 설명하겠습니다.
+
+1) String 타입의 List 배열을 생성합니다.
+2) Integer형 리스트를 생성합니다.
+3) Object 배열에 String리스트 배열에 할당합니다(문제 없이 진행됩니다.)
+4) Object 배열의 첫번째 인덱스에 Integer형 List를 할당합니다.
+   
+   * 여기서 문제가 발생합니다. 위에서 설명드렸지만 제네릭은 런타임시에는 소거 메커니즘에 의해 타입이 제거됩니다. 위에 예제 EX-1에서 처럼 ArrayStoreException 이 발생하지 않고 할당 됩니다.
+
+5) Integer형 리스트가 배열의 첫번째 인덱스에 할당됨으로써 classCastException 이 발생합니다. 따라서 컴파일 자체가 되지 않도록 오류를 발생시킵니다. 
+
+이러한 이유로 1) 단계에서 컴파일 오류가 나는것입니다. 
+
+
+***
+
+### 정리
+
+* 제네릭을 왜 사용해야 하는지 그리고 제네릭을 사용했을 때 이점에 대해 알아봤습니다. 
+  
+* 다음 포스팅에서는 Stack 구현을 일반 Object 로 구현했을때와 제네릭으로 구현했을 때 차이점을 예시로 보여드리고 설명드리겠습니다.
+
+읽어주셔서 감사합니다 
+
+#### 부족한 부분은 코멘트 부탁드립니다!
