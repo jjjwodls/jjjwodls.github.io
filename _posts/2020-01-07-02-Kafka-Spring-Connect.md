@@ -32,7 +32,7 @@ icon: icon-apache
 
 1.환경은 SpringBoot를 이용했습니다. 기존 프로젝트에 Dependency 를 추가하시면 됩니다. 
 
-```
+```js
 <dependency>
    <groupId>org.apache.kafka</groupId>
    <artifactId>kafka-streams</artifactId>
@@ -54,7 +54,7 @@ icon: icon-apache
 
 제가 선언한 속성입니다.
 
-```
+```js
 bootstrap.servers=localhost:9092
 retries=0
 batch.size=4096
@@ -66,7 +66,7 @@ buffer.memory=40960
 
 Producer 생성입니다.
 
-```
+```java
 @Configuration
 @PropertySource("classpath:kafka.properties")
 public class KafkaConfiguration {
@@ -124,7 +124,7 @@ public class KafkaConfiguration {
 
 kafka의 Consumer 설정입니다.
 
-```
+```java
 @EnableKafka
 @Configuration
 @PropertySource("classpath:kafka.properties")
@@ -169,7 +169,7 @@ public class KafkaConsumerConfig {
 
 대신에 Bean으로 등록되어야 하므로 클래스에 @Component 만 선언해주시면 됩니다.
 
-```
+```java
 @Controller
 public class HomeController {
 	
