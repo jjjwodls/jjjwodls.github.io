@@ -2,8 +2,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1; minimum-scale=1; user-scalable=no;">
+  
   {% if page.desc %}
     <meta content="{{ page.desc }}" name="description">
+    <meta property="og:description" content="{{ page.desc }}">
   {% endif %}
   {% if page.keywords %}
     <meta name="keywords" content="{{ page.keywords }}">
@@ -11,7 +13,6 @@
   <meta name="author" content="{{ site.author.name }}">
   <meta name="baseurl" content="{{ site.baseurl }}">
   <link rel="canonical" href="{{site.url}}{{page.url}}">
-
   <title>
     {% if page.title != "index" %}
         {{ page.title }} - {{ site.title }}
@@ -19,6 +20,12 @@
         {{ site.title }}
     {% endif %}
   </title>
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:type" content="website">  
+  <!-- <meta property="og:image" content="http://www.mysite.com/myimage.jpg"> -->
+  <meta property="og:url" content="{{site.url}}{{page.url}}">
+
+
   <!-- favicon -->
   <link rel="shortcut icon" href="{{ "/static/assets/img/favicon.ico" | prepend: site.baseurl }}">
 
